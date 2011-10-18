@@ -1,0 +1,7 @@
+- content_for :word do
+  = ''
+
+- @words.each do |word|
+  %span{:class => 'link the word'}
+    %a{:href => show_path(:word => word.word)}
+      ! #{word.word}

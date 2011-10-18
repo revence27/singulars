@@ -1,0 +1,77 @@
+$readisplay_font: "RalewayThin";
+$foundation_font: "BonvenoCFLight", $readisplay_font;
+$swishy_font: "TangerineBold";
+$base_dark: #000;
+
+body, table
+{
+  font-family: $foundation_font;
+  font-size: 10pt;
+}
+
+a
+{
+  color: $base_dark;
+  &:hover
+  {
+    font-weight: bold;
+    color: $base_dark;
+  }
+}
+
+#main
+{
+  padding-top: 10em;
+}
+
+#blackboard
+{
+  font-family: $readisplay_font;
+  font-size: 40pt;
+  text-align: center;
+}
+
+.make.the.point
+{
+  font-family: $readisplay_font;
+  .the.word
+  {
+    //  font-family: $swishy_font;
+    font-size: 100pt;
+    font-weight: bold;
+  }
+}
+
+.support.the.point
+{
+  font-size: 20pt;
+  font-family: $foundation_font;
+  .the.word, em
+  {
+
+  }
+}
+
+.link.the.word, .link.the.point
+{
+  font-size: 15pt;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.link.the.point
+{
+  margin-top: 5em;
+}
+
+.link.the.word
+{
+  margin-left: 1.25em;
+  margin-right: 1.25em;
+}
+
+#footer
+{
+  padding-top: 5em;
+  text-align: center;
+}

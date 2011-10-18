@@ -1,0 +1,20 @@
+- content_for :word do
+  ! #{@word.word rescue ''}
+
+- if @word then
+  .make.the.point
+    .the.word
+      ! #{@word.word}
+    is singular.
+  .support.the.point
+    ! &ldquo;#{@word.sample_sentence}&rdquo;
+  .link.the.point
+    %a{:href => show_path(:word => @word.word)} Link
+    &bull;
+    %a{:href => random_path} Another
+    &bull;
+    %a{:href => all_path} All
+- else
+  You should take care not to make the common mistake of using a singular word as though it is a plural, just because it ends in &ldquo;s&rdquo;.
+  %br/
+  %a{:href => random_path} Example&#133;

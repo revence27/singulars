@@ -1,0 +1,2 @@
+module SingularHelper
+end
